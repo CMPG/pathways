@@ -17,9 +17,9 @@ dbsnp.hg18 = original dbsnpID
 fst = global hierarchical FST
 pfst = probabilies fo the FST value compared to null distribution (left or right tail of distribution)
 qfst = quantiles of the FST value compared to null distribution
-chr.hg18 = chromosome after conversion to hg19 build
-pos.hg18 = chromosome position after conversion to hg19 build
-dbsnp.hg18 = dbsnpID after conversion to hg19 build
+chr.hg19 = chromosome after conversion to hg19 build
+pos.hg19 = chromosome position after conversion to hg19 build
+dbsnp.hg19 = dbsnpID after conversion to hg19 build
 zval = z-score corresponding to qfst
 
 - After conversion from hg18 to hg19, 194 SNPs couldn't not be mapped and were not used in further analysis.
