@@ -13,21 +13,21 @@ DETAILS:
 id = SNPID in our database
 chr.hg18 = chromosome in hg18 build
 pos.hg18 = chromosome position in hg18 build
-dbsnp.hg18 = original dbsnpID 
+dbsnp.hg18 = original dbsnpID in hg18 build
 fst = global hierarchical FST
-pfst = probabilies fo the FST value compared to null distribution (left or right tail of distribution)
+pfst = probabilies of the FST value compared to null distribution (left or right tail of distribution)
 qfst = quantiles of the FST value compared to null distribution
 chr.hg19 = chromosome after conversion to hg19 build
 pos.hg19 = chromosome position after conversion to hg19 build
 dbsnp.hg19 = dbsnpID after conversion to hg19 build
 zval = z-score corresponding to qfst
 
-- After conversion from hg18 to hg19, 194 SNPs couldn't not be mapped and were not used in further analysis.
+- During conversion from hg18 to hg19 build, 194 SNPs could not be mapped and were not used in further analysis.
 
-- Before calculation of zscores, we rounded extreme low and high p.fst/q.fst values to 1e-7 or (1-1e-7) resp.
-For all SNPs with p.fst < 1e-7 & q.fst > 1-(1e-7): we set p.fst = 1e-7, q.fst = 1-(1e-7)
-For all SNPs with p.fst < 1e-7 & q.fst  1e-7: we set p.fst = 1e-7, q.fst = 1e-7
-For all remaining SNPs with q.fst=1: we set q.fst = 1-p.fst
+- Before calculation of z-scores, we rounded extreme low and high pfst/qfst values to 1e-7 or (1-1e-7) resp.:
+For all SNPs with pfst < 1e-7 & qfst > 1-(1e-7): we set qfst = 1-(1e-7)
+For all SNPs with pfst < 1e-7 & qfst < 1e-7: we set qfst = 1e-7
+For all remaining SNPs with qfst=1: we set qfst = 1-pfst
 
 
 REFERENCES:
