@@ -33,6 +33,6 @@ For all remaining SNPs with qfst=1: we set qfst = 1-pfst
 REFERENCES:
 Excoffier L, Hofer T, Foll M. 2009. Detecting loci under selection in a hierarchically structured population. Heredity 103:285-298.
 Hofer T, Foll M, Excoffier L. 2012. Evolutionary forces shaping genomic islands of population differentiation in humans. BMC Genomics 13:107.
-Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol.
+Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
 
 
