@@ -2,7 +2,18 @@ Welcome to the CMPG Pathways repository
 
 CONTENTS:
 
-- HGDP_SNP_zval.txt (Added on April 30, 2013)
+Data tables that served as input for the gene set enrichment analysis, as described in:
+Daub et al., 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. 
+Mol Biol Evol. doi: 10.1093/molbev/mst080
+
+HGDP_SNP_zval.txt
+biosys.tsv
+biosys_gene.tsv
+gene_entrez.tsv
+
+***********************************************************************************
+HGDP_SNP_zval.txt (Added on April 30, 2013)
+***********************************************************************************
 
 DESCRIPTION:
 This file contains the z-scores calculated from global hierarchical FSTs of HGDP SNPs.
@@ -36,3 +47,62 @@ Hofer T, Foll M, Excoffier L. 2012. Evolutionary forces shaping genomic islands 
 Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
 
 
+***********************************************************************************
+biosys.tsv (Added on July 2, 2014)
+***********************************************************************************
+
+DESCRIPTION:
+This file contains the gene sets downloaded from the NCBI Biosystems database on March 23, 2011
+
+DETAILS:
+
+- Description of the columns:
+setBiosysID = gene set ID in Biosystems 
+setSourceID = gene set ID in source database
+setName = gene set name
+setSource = source database
+
+REFERENCES:
+Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
+Geer LY, Marchler-Bauer A, Geer RC, Han L, He J, He S, Liu C, Shi W, Bryant SH. 2010. The NCBI BioSystems database. Nucleic Acids Res. 38:D492–D496.
+
+***********************************************************************************
+biosys_gene.tsv (Added on July 2, 2014)
+***********************************************************************************
+
+DESCRIPTION:
+This file contains the list of genes and the gene set(s) they are part of
+downloaded from the NCBI Biosystems database on March 23, 2011
+
+DETAILS:
+
+- Description of the columns:
+setBiosysID = gene set ID in Biosystems	
+geneEntrezID = Entrez gene ID
+
+REFERENCES:
+Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
+Geer LY, Marchler-Bauer A, Geer RC, Han L, He J, He S, Liu C, Shi W, Bryant SH. 2010. The NCBI BioSystems database. Nucleic Acids Res. 38:D492–D496.
+
+***********************************************************************************
+gene_entrez.tsv (Added on July 2, 2014)
+***********************************************************************************
+
+DESCRIPTION:
+This file contains the list of genes downloaded from the NCBI gene database on January 4, 2012
+
+DETAILS:
+
+- Description of the columns:
+chr = chromosome
+geneEntrezID = Entrez gene ID
+startpos = start position on chromosome
+endpos = end position on chromosome
+strand = 1 or -1
+symb = gene symbol
+multi_loc =	did we find multiple start and end positions?
+length = in bp, simply endpos - startpos
+
+REFERENCES:
+Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
+Maglott D, Ostell J, Pruitt KD, Tatusova T. 2011. Entrez Gene: gene-centered information at NCBI. Nucleic Acids Res. 39:D52–D57
