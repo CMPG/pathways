@@ -21,25 +21,25 @@ This file contains the z-scores calculated from global hierarchical FSTs of HGDP
 
 Description of the columns:
 
-- id = SNPID in our database
-- chr.hg18 = chromosome in hg18 build
-- pos.hg18 = chromosome position in hg18 build
-- dbsnp.hg18 = original dbsnpID in hg18 build
-- fst = global hierarchical FST
-- pfst = probabilies of the FST value compared to null distribution (left or right tail of distribution)
-- qfst = quantiles of the FST value compared to null distribution
-- chr.hg19 = chromosome after conversion to hg19 build
-- pos.hg19 = chromosome position after conversion to hg19 build
-- dbsnp.hg19 = dbsnpID after conversion to hg19 build
-- zval = z-score corresponding to qfst
+- **id**: SNPID in our database
+- **chr.hg18**: chromosome in hg18 build
+- **pos.hg18**: chromosome position in hg18 build
+- **dbsnp.hg18**: original dbsnpID in hg18 build
+- **fst**: global hierarchical FST
+- **pfst**: probabilies of the FST value compared to null distribution (left or right tail of distribution)
+- **qfst**: quantiles of the FST value compared to null distribution
+- **chr.hg19**: chromosome after conversion to hg19 build
+- **pos.hg19**: chromosome position after conversion to hg19 build
+- **dbsnp.hg19**: dbsnpID after conversion to hg19 build
+- **zval**: z-score corresponding to qfst
 
 During conversion from hg18 to hg19 build, 194 SNPs could not be mapped and were not used in further analysis.
 
 Before calculation of z-scores, we rounded extreme low and high pfst/qfst values to 1e-7 or (1-1e-7) resp.:
 
-	For all SNPs with pfst < 1e-7 & qfst > 1-(1e-7): we set qfst = 1-(1e-7)
-	For all SNPs with pfst < 1e-7 & qfst < 1e-7: we set qfst = 1e-7
-	For all remaining SNPs with qfst=1: we set qfst = 1-pfst
+	For all SNPs with pfst < 1e-7 & qfst > 1-(1e-7): we set qfst: 1-(1e-7)
+	For all SNPs with pfst < 1e-7 & qfst < 1e-7: we set qfst: 1e-7
+	For all remaining SNPs with qfst=1: we set qfst: 1-pfst
 
 
 **References:**
@@ -63,10 +63,10 @@ This file contains the gene sets downloaded from the NCBI Biosystems database on
 
 Description of the columns:
 
-- setBiosysID = gene set ID in Biosystems 
-- setSourceID = gene set ID in source database
-- setName = gene set name
-- setSource = source database
+- **setBiosysID**: gene set ID in Biosystems 
+- **setSourceID**: gene set ID in source database
+- **setName**: gene set name
+- **setSource**: source database
 
 **References:**
 
@@ -87,8 +87,8 @@ downloaded from the NCBI Biosystems database on March 23, 2011
 
 Description of the columns:
 
-- setBiosysID = gene set ID in Biosystems	
-- geneEntrezID = Entrez gene ID
+- **setBiosysID**: gene set ID in Biosystems	
+- **geneEntrezID**: Entrez gene ID
 
 **References:**
 
@@ -108,14 +108,14 @@ This file contains the list of genes downloaded from the NCBI gene database on J
 
 Description of the columns:
 
-- chr = chromosome
-- geneEntrezID = Entrez gene ID
-- startpos = start position on chromosome
-- endpos = end position on chromosome
-- strand = 1 or -1
-- symb = gene symbol
-- multi_loc =	did we find multiple start and end positions?
-- length = in bp, simply endpos - startpos
+- **chr**: chromosome
+- **geneEntrezID**: Entrez gene ID
+- **startpos**: start position on chromosome
+- **endpos**: end position on chromosome
+- **strand**: 1 or -1
+- **symb**: gene symbol
+- **multi_loc**: did we find multiple start and end positions?
+- **length**: in bp, simply endpos - startpos
 
 **References:**
 
