@@ -33,8 +33,9 @@ Description of the columns:
 
 Filter on 2 or 3 of the *covxx* flags if you only want to use mutations that are located in the overlap of the covered genomic regions between the different projects.
 
-Examples: Filter on **covHC=1 & covCG=1** if you require to only use mutations that are covered by both the human chimp alignment and that are part of the exome that is fully sequenced in all 42 CG samples (Table S11 in the paper). 
-Flags **covCG=1 & cov1000G=1** were set for tables S6 and S7 in the paper
+Examples: Filter on **covHC=1 & covCG=1** if you require to only use mutations that are covered by both the human chimp alignment and that are part of the exome that is fully sequenced in all 42 CG samples (Table S11 in the paper).
+ 
+Flags **covCG=1 & cov1000G=1** were set for tables S6 and S7 in the paper.
 
 **References:**
 
