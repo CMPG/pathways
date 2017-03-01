@@ -8,10 +8,10 @@ Description of data tables that served as input for the 2DNS test as described i
 -----------------------------------------------------------------------------
 (Added on March 1, 2017)
 
-**DESCRIPTION:**
+**Description:**
 This file contains the list of polymorphic and fixed mutations
 
-**DETAILS:**
+**Details:**
 
 Description of the columns:
 
@@ -36,7 +36,7 @@ Filter on 2 or 3 of the *covxx* flags if you only want to use mutations that are
 Examples: Filter on **covHC=1 & covCG=1** if you require to only use mutations that are covered by both the human chimp alignment and that are part of the exome that is fully sequenced in all 42 CG samples  (Table S11 in the paper). 
 Flags **covCG=1 & cov1000G=1** were set for tables S6 and S7 in the paper
 
-**REFERENCES:**
+**References:**
 
 Daub, J. T., Dupanloup, I., Robinson-Rechavi, M. & Excoffier, L. Inference of Evolutionary Forces Acting on Human Biological Pathways. Genome Biol Evol 7, 1546–1558 (2015).
 
@@ -46,10 +46,10 @@ Daub, J. T., Dupanloup, I., Robinson-Rechavi, M. & Excoffier, L. Inference of Ev
 -----------------------------------------------------------------------------
 (Added on March 1, 2017)
 
-**DESCRIPTION:**
+**Description:**
 This file contains the list of genes, their lengths and chimp/mouse ortholog status
 
-**DETAILS:**
+**Details:**
 
 Description of the columns:
 
@@ -68,6 +68,6 @@ Description of the columns:
 
 Use the cov.xx.length exon lengths when you require mutations to fall within genomic overlap between parts of exome covered by 2 or 3 projects. See also the  covHC, covCG, cov1000G flags in the table 2DNS_mut.txt.
 
-**REFERENCES:**
+**References:**
 
 Daub, J. T., Dupanloup, I., Robinson-Rechavi, M. & Excoffier, L. Inference of Evolutionary Forces Acting on Human Biological Pathways. Genome Biol Evol 7, 1546–1558 (2015).

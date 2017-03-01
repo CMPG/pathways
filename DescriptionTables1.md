@@ -14,10 +14,10 @@ Mol Biol Evol. doi: 10.1093/molbev/mst080
 -----------------------------------------------------------------------------
 (Added on April 30, 2013)
 
-**DESCRIPTION:**
+**Description:**
 This file contains the z-scores calculated from global hierarchical FSTs of HGDP SNPs.
 
-**DETAILS:**
+**Details:**
 
 Description of the columns:
 
@@ -42,7 +42,7 @@ Before calculation of z-scores, we rounded extreme low and high pfst/qfst values
 	For all remaining SNPs with qfst=1: we set qfst = 1-pfst
 
 
-**REFERENCES:**
+**References:**
 
 Excoffier L, Hofer T, Foll M. 2009. Detecting loci under selection in a hierarchically structured population. Heredity 103:285-298.
 
@@ -56,10 +56,10 @@ Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, 
 -----------------------------------------------------------------------------
 (Added on July 2, 2014)
 
-**DESCRIPTION:**
+**Description:**
 This file contains the gene sets downloaded from the NCBI Biosystems database on March 23, 2011
 
-**DETAILS:**
+**Details:**
 
 Description of the columns:
 
@@ -68,7 +68,7 @@ Description of the columns:
 - setName = gene set name
 - setSource = source database
 
-**REFERENCES:**
+**References:**
 
 Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
 
@@ -79,18 +79,18 @@ Geer LY, Marchler-Bauer A, Geer RC, Han L, He J, He S, Liu C, Shi W, Bryant SH. 
 -----------------------------------------------------------------------------
 (Added on July 2, 2014)
 
-**DESCRIPTION:**
+**Description:**
 This file contains the list of genes and the gene set(s) they are part of
 downloaded from the NCBI Biosystems database on March 23, 2011
 
-**DETAILS:**
+**Details:**
 
 Description of the columns:
 
 - setBiosysID = gene set ID in Biosystems	
 - geneEntrezID = Entrez gene ID
 
-**REFERENCES:**
+**References:**
 
 Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
 
@@ -101,10 +101,10 @@ Geer LY, Marchler-Bauer A, Geer RC, Han L, He J, He S, Liu C, Shi W, Bryant SH. 
 -----------------------------------------------------------------------------
  (Added on July 2, 2014)
 
-**DESCRIPTION:**
+**Description:**
 This file contains the list of genes downloaded from the NCBI gene database on January 4, 2012
 
-**DETAILS:**
+**Details:**
 
 Description of the columns:
 
@@ -117,7 +117,7 @@ Description of the columns:
 - multi_loc =	did we find multiple start and end positions?
 - length = in bp, simply endpos - startpos
 
-**REFERENCES:**
+**References:**
 
 Daub JT, Hofer T, Cutivet E, Dupanloup I, Quintana-Murci L, Robinson-Rechavi M, Excoffier L. 2013. Evidence for Polygenic Adaptation to Pathogens in the Human Genome. Mol Biol Evol. doi: 10.1093/molbev/mst080
 
